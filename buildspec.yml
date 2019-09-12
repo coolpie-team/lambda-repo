@@ -25,6 +25,7 @@ phases:
   # - command
   build:
     commands:
+      - chmod +x scripts/*.sh
       - mkdir .build
       - mkdir .tmp
       - scripts/package.sh $STREAM
