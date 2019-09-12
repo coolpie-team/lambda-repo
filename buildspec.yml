@@ -28,6 +28,7 @@ phases:
   # - command
   build:
     commands:
+      - node --version
       - chmod +x scripts/*.sh
       - mkdir .build
       - mkdir .tmp
