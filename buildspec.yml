@@ -39,7 +39,8 @@ phases:
       - echo Zip file `ls .build/*.zip`
 artifacts:
   files:
-    - .build/*.zip
+    - '*.zip'
+  base-directory: .build
     # - command
 #post_build:
 #commands:
