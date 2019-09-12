@@ -37,6 +37,9 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Zip file `ls .build/*.zip`
+artifacts:
+  files:
+    - .build/*.zip
     # - command
 #post_build:
 #commands:
