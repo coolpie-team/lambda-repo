@@ -31,8 +31,8 @@ phases:
       - scripts/package.sh $STREAM
   post_build:
     commands:
-      - echo "Build completed on: " `date`
-      - echo "zip file: " `ls .build/*.zip`
+      - echo Build completed on `date`
+      - echo Zip file `ls .build/*.zip`
     # - command
 #post_build:
 #commands:
