@@ -45,12 +45,12 @@ exports.handler = async function(event) {
 
 //comment/uncomment to test run in local
 
-async function test(){
-  var event={label:"longRun"};
-  var result=await exports.handler(event);
-
-  console.log(result);
-};
-test();
+//async function test(){
+//  var event={label:"longRun"};
+//  var result=await exports.handler(event);
+//
+//  console.log(result);
+//};
+//test();
 
 
