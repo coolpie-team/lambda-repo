@@ -6,7 +6,7 @@ const labelMap=require("./LabelMap.js");
 
 //lambda handler
 exports.handler = async function(event) {
-  var version="v1";
+  var version="v2";
 
   //console.log("FUNC-ID:"+version+":STARTED");
 
