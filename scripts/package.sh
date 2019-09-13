@@ -9,7 +9,7 @@ stream=$1
 
 tmpFolder='.tmp'
 
-cp -fr $stream/* $tmpFolder
+cp -fr $stream $tmpFolder
 
 cp -fr ent-shared $tmpFolder
 
