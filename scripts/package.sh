@@ -7,7 +7,11 @@ source scripts/config.sh
 
 stream=$1
 
-ver=$2
+func=$2
+
+ver=$3
+
+
 
 tmpFolder='.tmp'
 
@@ -18,7 +22,7 @@ cp -fr ent-shared $tmpFolder
 cp -fr shared $tmpFolder
 
 #zipFile=lambda-$stream-$ver.zip
-zipPrefix=lambda-$stream
+zipPrefix=lambda-$stream-$func
 zipFile=$zipPrefix.zip
 
 #cd $ver && zip -r ../build/$zipFile $APP_SOURCES && cd ..

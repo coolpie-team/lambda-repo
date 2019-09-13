@@ -32,7 +32,7 @@ phases:
       - chmod +x scripts/*.sh
       - mkdir .build
       - mkdir .tmp
-      - scripts/package.sh $STREAM $CODEBUILD_RESOLVED_SOURCE_VERSION
+      - scripts/package.sh $STREAM $FUNC $CODEBUILD_RESOLVED_SOURCE_VERSION
   post_build:
     commands:
       - echo Build completed on `date`
