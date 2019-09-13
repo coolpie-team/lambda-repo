@@ -6,6 +6,9 @@ const labelMap=require("./LabelMap.js");
 
 //lambda handler
 exports.handler = async function(event) {
+  var version="v1";
+
+  //console.log("FUNC-ID:"+version+":STARTED");
 
   var hrstart = process.hrtime();
 
@@ -14,6 +17,7 @@ exports.handler = async function(event) {
   console.log("EVENT:\n"+jsonEvent);
 
   var result=new cs.CallResult();
+  result.version=version; //test
 
   var url=labelMap.LabelMap[event.label];
 
