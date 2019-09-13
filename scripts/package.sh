@@ -25,4 +25,4 @@ zipFile=$zipPrefix.zip
 #cd $stream && zip -r ../.build/$zipFile $APP_SOURCES
 cd $tmpFolder && zip -r ../.build/$zipFile *  && cd ..
 
-cp ./build/$zipFile ./build/$zipPrefix-$ver.zip
+cp .build/$zipFile .build/$zipPrefix-$ver.zip
